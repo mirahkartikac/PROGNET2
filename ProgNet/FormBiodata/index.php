@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tugas JavaScript</title>
+    <title>Tugas PHP</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -91,7 +91,7 @@
               Projects
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item text-black" href="#">Tugas </a></li>
+              <li><a class="dropdown-item text-black" href="index.html">Tugas JavaScript</a></li>
               <li><a class="dropdown-item text-black" href="index.php">Tugas PHP</a></li>
             </ul>
           </li>
@@ -101,58 +101,58 @@
     <div class="container">
         <h1>Biodata</h1>
         <br>
-        <form id="biodataForm" action="proses.php" method="post">
+        <form action="proses.php" method="post">
             <label for="email">Email:</label>
-            <input type="text" id="email" placeholder="name@example.com" required><br>
+            <input type="text" id="email" placeholder="name@example.com" name="email" required><br>
 
             <label for="name">Nama:</label>
-            <input type="text" id="name" placeholder="Mirah Example" required><br>
+            <input type="text" id="name" placeholder="Mirah Example" name="nama" required><br>
             <label for="univ">Universitas:</label>
-            <input type="text" id="univ" placeholder="Universitas Example" required><br>
+            <input type="text" id="univ" placeholder="Universitas Example" name="univ" required><br>
             <label for="fakultas">Fakultas:</label>
-            <input type="text" id="fakultas" placeholder="Fakultas Example" required><br>
+            <input type="text" id="fakultas" placeholder="Fakultas Example" name="fakultas" required><br>
             <label for="prodi">Program Studi:</label>
-            <input type="text" id="prodi" placeholder="Teknologi Example" required><br>
+            <input type="text" id="prodi" placeholder="Teknologi Example" name="prodi" required><br>
 
             <label for="nim">NIM:</label>
-            <input type="number" id="nim" placeholder="2205551048" required><br>
+            <input type="number" id="nim" placeholder="2205551048" name="nim" required><br>
 
             <label for="gender">Jenis Kelamin:</label>
-            <select id="gender" required>
-                <option value="male">Laki-laki</option>
-                <option value="female">Perempuan</option>
+            <select id="gender" name="gender" required>
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
             </select><br>
 
             <label for="age">Umur:</label>
-            <input type="number" id="age" placeholder="20" required><br>
+            <input type="number" id="age" placeholder="20" name="umur" required><br>
 
             <label for="birthplace">Tempat Lahir:</label>
-            <input type="text" id="birthplace" placeholder="Singaraja Example" required><br>
+            <input type="text" id="birthplace" placeholder="Singaraja Example" name="birthplace" required><br>
 
             <label for="tglLahir">Tanggal Lahir:</label>
-            <input type="date" id="tglLahir" required><br><br>
+            <input type="date" id="tglLahir" name="tglLahir" required><br><br>
 
             <label for="hobi">Hobi:</label>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="hobi[]" value="" id="flexCheckDefault">
+                <input class="form-check-input" type="checkbox" name="hobi[]" value="Jurnalistik" id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
                   Jurnalistik
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="hobi[]" value="" id="flexCheckChecked" checked>
+                <input class="form-check-input" type="checkbox" name="hobi[]" value="Menyanyi" id="flexCheckChecked" checked>
                 <label class="form-check-label" for="flexCheckChecked">
                   Menyanyi
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="hobi[]" value="" id="flexCheckChecked" checked>
+                <input class="form-check-input" type="checkbox" name="hobi[]" value="Menari" id="flexCheckChecked" checked>
                 <label class="form-check-label" for="flexCheckChecked">
                   Menari
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="hobi[]" value="" id="flexCheckChecked" checked>
+                <input class="form-check-input" type="checkbox" name="hobi[]" value="Olahraga" id="flexCheckChecked" checked>
                 <label class="form-check-label" for="flexCheckChecked">
                   Olahraga
                 </label>
@@ -160,37 +160,37 @@
 
             <label for="agama">Agama</label>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="agama" id="hindu">
+                <input class="form-check-input" type="radio" name="agama" value="Hindu" id="hindu">
                 <label class="form-check-label" for="hindu">
                   Hindu
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="agama" id="kristen">
+                <input class="form-check-input" type="radio" name="agama" value="Kristen" id="kristen">
                 <label class="form-check-label" for="kristen">
                   Kristen
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="agama" id="katolik">
+                <input class="form-check-input" type="radio" name="agama" value="Katolik" id="katolik">
                 <label class="form-check-label" for="katolik">
                   Katolik
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="agama" id="buddha">
+                <input class="form-check-input" type="radio" name="agama" value="Buddha" id="buddha">
                 <label class="form-check-label" for="buddha">
                   Buddha
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="agama" id="konghucu">
+                <input class="form-check-input" type="radio" name="agama" value="Konghucu" id="konghucu">
                 <label class="form-check-label" for="konghucu">
                   Kong Hu Cu
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="agama" id="islam" checked>
+                <input class="form-check-input" type="radio" name="agama" value="Islam" id="islam" checked>
                 <label class="form-check-label" for="islam">
                   Islam
                 </label>
