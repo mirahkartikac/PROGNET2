@@ -93,6 +93,7 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item text-black" href="index.html">Tugas JavaScript</a></li>
               <li><a class="dropdown-item text-black" href="index.php">Tugas PHP</a></li>
+              <li><a class="dropdown-item text-black" href="index3.php">Connect Batabase</a></li>
             </ul>
           </li>
         </ul>
